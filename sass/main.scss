@@ -1,0 +1,21 @@
+
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
+
+@import "component/card";
+
+@import "layouts/sidebar";
+@import "layouts/maincontent";
+@import "layouts/header";
+@import "layouts/tabular";
+
+@import "pages/home";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');

@@ -1,0 +1,224 @@
+.logo {
+  height: 80px;
+  padding: 16px;
+
+  @include respond(tab-port) { 
+    height: 70px;
+    padding: 14px;
+  }
+  
+  @include respond(phone) { 
+    display: none;
+  }
+
+  @include respond(tab-land) { 
+    display: none;
+  }
+}
+
+.main {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.main li {
+  padding: 1.15rem;
+  margin: 6px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main li:hover,
+.active {
+  background: #e0e0e058;
+}
+
+.main a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main a span {
+  overflow: hidden;
+  font-size: 1.1rem;
+}
+.main a i {
+  font-size: 1.2rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @include respond(phone) { 
+    position: relative;
+  }
+
+  @include respond(tab-land) { 
+    position: relative;
+   }
+}
+
+.search__box {
+  background: rgb(237, 237, 237);
+  border-radius: 15px;
+  color: rgba(113,99, 186, 255);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include respond(phone) { 
+    gap: 0.6rem;
+  }
+
+  @include respond(tab-land) { 
+    gap: 1rem;
+   }
+}
+
+
+.search__box {
+  flex: 1;
+}
+
+
+.search__box input {
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  
+
+  @include respond(phone) { 
+  padding: 7px;
+  font-size: 0.8rem;
+  }
+
+  @include respond(tab-land) { 
+    padding: 10px;
+    font-size: 1.2rem;
+   }
+}
+.search__box i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  @include respond(phone) { 
+    font-size: .8rem;
+   }
+  
+   @include respond(tab-land) { 
+    font-size: 1.2rem;
+   }
+}
+
+
+.search__box i:hover {
+  transform: scale(1.5);
+
+  @include respond(phone) { 
+    transform: scale(1.1);
+   }
+}
+
+input::placeholder {
+  font-size: 1rem;
+
+  @include respond(phone) { 
+    font-size: .6rem;
+   }
+
+   @include respond(tab-land) { 
+    font-size: 1.2rem;
+   }
+}
+
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount span {
+  padding: 1rem;
+  
+  @include respond(phone) { 
+    padding: 3rem;
+   }
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 400;
+
+  @include respond(phone) { 
+    font-size: 3rem;
+   }
+
+   @include respond(tab-land) { 
+    font-size: 3.5rem;
+   }
+
+   
+}
+
+.amount__value {
+  font-size: 2.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+
+  @include respond(phone) { 
+    font-size: 4.2rem;
+    font-weight: bold;
+   }
+
+   @include respond(tab-land) { 
+    font-size: 5rem;
+    font-weight: bold;
+   }
+}
+
+.icon {
+  color: #fff;
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  @include respond(phone) { 
+      padding: 5rem;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      font-size: 3.5rem;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    @include respond(tab-land) { 
+      padding: 4rem;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      font-size: 27px;
+      left: -20px;
+     }
+  }

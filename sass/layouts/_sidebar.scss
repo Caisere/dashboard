@@ -1,0 +1,52 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: rgba(113, 99, 186, 255);
+
+ 
+  @include respond(big-desktop) { 
+    width: 80px;
+  }
+
+  @include respond(tab-land) { 
+    width: 70px;
+  }
+
+  @include respond(tab-port) { 
+    width: 60px;
+  }
+
+  @include respond(phone) { 
+    width: 40px;
+    padding: 2rem 1rem;
+  }
+}
+
+.sidebar:hover {
+  width: 260px;
+  transition: 0.5s ease-in-out;
+
+  @include respond(big-desktop) { 
+    width: 185px;
+  }
+
+  @include respond(tab-land) { 
+    width: 155px;
+  }
+
+  @include respond(tab-port) { 
+    width: 135px;
+  }
+
+  @include respond(phone) { 
+    width: 100px;
+  }
+}

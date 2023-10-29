@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Design | by Caisere</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+
+
+ 
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="main">
+      <li class="active">
+        <a href="#">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-user"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-chart-bar"></i>
+          <span>Statistics</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Careers</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>FAQ</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-star"></i>
+          <span>Testimonials</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+
+      <li class="logout">
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main__content">
+    <div class="header__wrapper">
+      <div class="header__title">
+        <span>
+          Primary
+        </span>
+        <h2 class="dash">
+          Dashboard
+        </h2>
+      </div>
+      <div class="user__info">
+        <div class="search__box">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search">
+        </div>
+          <img src="images/channel-3.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="card__container">
+      <h3 class="main__title">Today's Data</h3>
+      <div class="card__wrapper">
+        <div class="payment__card light__red">
+          <div class="card__header">
+            <div class="amount">
+              <span class="title">
+                Payment amount
+              </span>
+              <span class="amount__value">
+                $500.00
+              </span>
+            </div>
+            <i class="fas fa-dollar-sign icon dark__red"></i>
+          </div>
+          <span class="card__detail">
+            **** **** **** 8423
+          </span>
+        </div>
+
+        <div class="payment__card light__purple">
+          <div class="card__header">
+            <div class="amount">
+              <span class="title">
+                Payment order
+              </span>
+              <span class="amount__value">
+                $200.00
+              </span>
+            </div>
+            <i class="fas fa-list icon dark__purple"></i>
+          </div>
+          <span class="card__detail">
+            **** **** **** 5524
+          </span>
+        </div>
+
+        <div class="payment__card light__green">
+          <div class="card__header">
+            <div class="amount">
+              <span class="title">
+                Payment customer
+              </span>
+              <span class="amount__value">
+                $350.00
+              </span>
+            </div>
+            <i class="fas fa-users icon dark__green"></i>
+          </div>
+          <span class="card__detail">
+            **** **** **** 7785
+          </span>
+        </div>
+
+        <div class="payment__card light__blue">
+          <div class="card__header">
+            <div class="amount">
+              <span class="title">
+                Payment proceed
+              </span>
+              <span class="amount__value">
+                $150.00
+              </span>
+            </div>
+            <i class="fas fa-check icon dark__blue"></i>
+          </div>
+          <span class="card__detail">
+            **** **** **** 6576
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabular__wrapper">
+      <h3 class="main__title">
+        Finance Data
+      </h3>
+      <div class="table__container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Transaction</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2023-05-01</td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$250</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+
+          <tbody class="white__background">
+            <tr>
+              <td>2023-05-02</td>
+              <td>Income</td>
+              <td>Client payment</td>
+              <td>$500</td>
+              <td>Sales</td>
+              <td>Completed</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>2023-05-03</td>
+              <td>Expenses</td>
+              <td>Travel Expenses</td>
+              <td>$250</td>
+              <td>Travel</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot >
+            <tr>
+              <td colspan="7">
+                Total: $1,000
+              </td>
+            </tr>
+          </tfoot>
+
+        
+        </table>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

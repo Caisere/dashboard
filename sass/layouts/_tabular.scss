@@ -1,0 +1,78 @@
+/* **** Tabular Container**** */
+
+.tabular__wrapper {
+  background: #fff;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.table__container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rgba(113, 99, 186, 255);
+  color: #fff;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+
+  @include respond(tab-land) { 
+    font-size: 1.7rem;
+    padding: 1.4rem;
+  }
+}
+
+tbody {
+  background: #f2f2f2;
+}
+
+td {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+
+  @include respond(tab-land) { 
+    font-size: 1.7rem;
+    padding: 1.4rem;
+  }
+}
+
+.white__background {
+  background: #fff;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tfoot {
+  background: rgba(113, 99, 187, 255);
+ 
+}
+
+tfoot td {
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+}
+
+.table__container  button {
+  color: rgb(90, 165, 90);
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+
+  @include respond(phone) { 
+    font-size: 12px;
+   } 
+}

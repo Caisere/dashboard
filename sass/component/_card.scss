@@ -1,0 +1,107 @@
+/* **** card container**** */
+
+.card__container {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+
+  @include respond(phone) { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+  }
+}
+
+.main__title {
+  color: rgba(113, 99, 187, 255);
+  padding-bottom: 1.8rem;
+  font-size: 1.5rem;
+
+  @include respond(phone) { 
+   font-size: 2rem;
+  } 
+  
+  @include respond(tab-land) { 
+    font-size: 3.5rem;
+   } 
+}
+
+.payment__card {
+  background: rgb(229, 223, 223);
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all .5s ease-in-out;
+
+  @include respond(phone) { 
+    width: 100%;
+    height: 270px;
+  }
+
+  @include respond(tab-land) {
+    padding: 1.2rem;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.payment__card:hover {
+  transform: translateY(-5px) scale(1.2);
+
+  @include respond(phone) { 
+    transform: translateY(-5px);
+   }
+
+   @include respond(tab-land) { 
+    transform: translateY(0);
+   }
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include respond(phone) { 
+    margin-bottom: 40px;
+   } 
+}
+
+.card__detail {
+  font-size: 1.5rem;
+  color: #777777;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+
+  @include respond(phone) { 
+    font-size: 6.5rem;
+    margin-left: 10px;
+    font-weight: bold;
+   } 
+
+   @include respond(tab-land) { 
+    font-size: 6rem;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: center;
+   }
+}
